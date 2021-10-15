@@ -54,10 +54,10 @@ elForm.addEventListener('submit', (evt) => {
 
     const inputValue = elSearchInput.value.trim();
     const selectGanre = elGenreSelect.value;
-    const pageValue = elPageInput.value.trim();
+    const pageValue = elPageInput.value;
 
     async function getFilms() {
-        const respons = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputValue}&type=${selectGanre}&page=${pageValue}`);
+        const respons = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${inputValue}&type=${selectGanre}&page=${pageValue}`);
         const data = await respons.json();
         if (data.Search.length>0) {
            renderFilms(data.Search, elList);    
@@ -65,12 +65,10 @@ elForm.addEventListener('submit', (evt) => {
             return;
         }
     }
-    
     getFilms();
     
+    
 })
-// getFilms();
-// renderFilms(data.Search, elList);
 
 
 
