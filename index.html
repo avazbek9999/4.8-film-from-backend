@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="film">
+        <div class="container-fluid">
+            <h1 class="film__headding text-center">Movies Catalog</h1>
+            <form class="form w-50 mx-auto">
+                <label class="input-label form-label d-block ">
+                    Search by movie name:
+                    <input class="search-input form-control" type="search" name="user_search" placeholder="Searching...">
+                </label>
+
+                <label class="select-label form-label d-block " >
+                    Search by movie genre:
+                    <select class="genre_select form-select">
+                        <option value="movie">Movie</option>
+                        <option value="series">Series</option>
+                        <option value="episode">Episode</option>
+                        <option value="game">Game</option>
+                    </select>
+                </label>
+
+                <label class="input-label form-label d-block ">
+                    page search:
+                    <input class="page-input form-control" type="number" name="user_search" placeholder="Searching...">
+                </label>
+
+                <button class="btn btn-info">Submit</button>
+            </form>
+            <ul class="list">
+                <img class="list-spinner" src="./picture/Spinner-1s-200px (1).svg" alt="spinner img" width="400" height="400">
+            </ul>
+        </div>
+    </section>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

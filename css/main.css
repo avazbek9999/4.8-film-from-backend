@@ -1,0 +1,26 @@
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    list-style: none;
+}
+
+.list-spinner{
+    width: 100%;
+    
+}
+
+.list__item{
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.list__item:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
